@@ -105,7 +105,7 @@ public class RestAuthController {
 
 ![](doc/media/oauth/09b1e934.png)
 
-点击“连接”即可完成百度的 OAuth 登录。
+点击“连接”即可完成 OAuth 登录。
 
 ## 3. 授权结果
 

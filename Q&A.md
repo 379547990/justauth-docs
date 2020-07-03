@@ -162,3 +162,25 @@ System.setProperty("proxyHost", "127.0.0.1");
 以上代码可以在声明 `AuthRequest` 时创建，也可以全局执行。
 
 本地如果支持科学上网，就用自己本地的代理端口即可，如果不支持科学上网，可以去网上找一些免费的代理IP进行测试（请自行操作）。
+
+## 14. 使用领英登录时回调提示“Illegal code [LINKEDIN]”
+
+发生这种情况，一般就是参数配置错误，导致第三方处理数据时发生异常，因此返回了`error`信息，比如配置了不合适的授权 scope：
+```
+authRequest = new AuthLinkedinRequest(AuthConfig.builder()
+    .clientId("")
+    .clientSecret("")
+    .redirectUri("http://localhost:8443/oauth/callback/linkedin")
+    .scopes(Arrays.asList(
+            AuthLinkedinScope.R_LITEPROFILE.getScope(),
+            AuthLinkedinScope.R_EMAILADDRESS.getScope(),
+            AuthLinkedinScope.W_MEMBER_SOCIAL.getScope(),
+            AuthLinkedinScope.R_MEMBER_SOCIAL.getScope()
+    ))
+    .build());
+```
+如上scope中多了一个`R_MEMBER_SOCIAL`，查看官方介绍：[share-api](https://docs.microsoft.com/en-us/linkedin/marketing/integrations/community-management/shares/share-api)，    
+![](./_media/qa/a653270f.png)    
+此授权只开放给**开发者**。
+另外还可通过断点的形式查找问题如：    
+![](_media/qa/a1bfd3f0.png)    

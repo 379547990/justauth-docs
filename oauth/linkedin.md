@@ -92,7 +92,7 @@ public class RestAuthController {
 授权链接访问成功后会看到以下页面内容：
 ![](doc/media/oauth/36f2027e.png)
 
-点击“连接”即可完成百度的 OAuth 登录。
+点击“连接”即可完成 OAuth 登录。
 
 ## 3. 授权结果
 

@@ -34,6 +34,8 @@
 - <a href="https://developers.pinterest.com/docs/api/overview/?" target="_blank">Pinterest</a>
 - <a href="https://api.stackexchange.com/docs/authentication" target="_blank">StackOverflow</a>
 - <a href="https://developer.huawei.com/consumer/cn/devservice/doc/30101" target="_blank">华为</a>
+    - <a href="https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides-V5/open-platform-oauth-0000001050123437-V5" target="_blank">基于OAuth 2.0开放鉴权</a>
+    - <a href="https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides-V5/open-platform-appendix-0000001050183658-V5#ZH-CN_TOPIC_0000001050183658__section1945114718813" target="_blank">华为OAuth应用级Access Token流控机制</a>
 - <a href="https://open.kujiale.com/open/apps/2/docs?doc_id=95" target="_blank">酷家乐</a>
 - <a href="https://docs.gitlab.com/ee/api/oauth2.html" target="_blank">Gitlab</a>
 - <a href="http://open.waimai.meituan.com/openapi_docs/oauth/" target="_blank">美团</a>
