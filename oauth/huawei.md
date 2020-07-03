@@ -1,7 +1,5 @@
 ## 1. 申请应用
 
-### 1.1 登录百度开发者中心
-
 1. 登录华为开发者联盟官网：[华为开发者联盟官网](https://developer.huawei.com/consumer/cn/)
 2. 登录后会自动进入管理控制台    
 ![](../_media/oauth/4cc18e60.png)
