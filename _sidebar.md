@@ -1,9 +1,9 @@
-- [入门和使用](README.md)
+- [关于](README.md)
+- **快速开始（必读）**:triangular_flag_on_post:
+  - [**名词解释**](explain.md)
+  - [**OAuth流程**](oauth.md)
+  - [**如何使用**](how-to-use.md)
 - [贡献者名单](contributors.md)
-- 快速开始
-  - [名词解释](explain.md)
-  - [OAuth流程](oauth.md)
-  - [如何使用](how-to-use.md)
 - [Q&A](Q&A.md)
 - 集成第三方
   - [√ Gitee登录](oauth/gitee.md)

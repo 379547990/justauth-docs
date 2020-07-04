@@ -37,6 +37,9 @@
 	<strong>开源地址：</strong> <a target="_blank" href='https://gitee.com/yadong.zhang/JustAuth'>Gitee</a> | <a target="_blank" href='https://github.com/zhangyd-c/JustAuth'>Github</a>
 </p>
 <p align="center">
+	<strong>官方网站：</strong> <a target="_blank" href='https://justauth.cn'>https://justauth.cn</a>
+</p>
+<p align="center">
     <strong>QQ群：</strong>230017570
 </p>
 <p align="center"> 
@@ -66,33 +69,31 @@ JustAuth的发展离不开朋友们的支持，时至今日，JustAuth已渐趋�
 
 ### 提供bug或建议
 
-- [Gitee](https://gitee.com/yadong.zhang/JustAuth/issues)
-- [Github](https://github.com/justauth/JustAuth/issues)
+[Gitee Issues](https://gitee.com/yadong.zhang/JustAuth/issues) | [Github Issues](https://github.com/justauth/JustAuth/issues)
 
 如果你正在使用JustAuth，可以在这儿留下你的足迹，获得优先推送、曝光
 
-- [Gitee](https://gitee.com/yadong.zhang/JustAuth/issues/IZ2T7)
-- [Github](https://github.com/justauth/JustAuth/issues/17)
+[Gitee](https://gitee.com/yadong.zhang/JustAuth/issues/IZ2T7) | [Github](https://github.com/justauth/JustAuth/issues/17)
 
 ### 贡献代码的步骤
 
-1. fork本项目到自己的repo
-2. 把fork过去的项目也就是你仓库中的项目clone到你本地
+1. fork 本项目到自己的 repo
+2. 把 fork 过去的项目也就是你仓库中的项目 clone 到你本地
 3. 修改代码（`dev`分支）
-4. commit后push到自己的仓库
-5. 发起PR（pull request） 请求，提交到`dev`分支
+4. commit 后 push 到自己的仓库
+5. 发起 PR（pull request） 请求，提交到`dev`分支
 6. 等待合并
 
 ### 注意事项
 
-1. JustAuth只接受集成**OAuth2.0**的平台
+1. JustAuth 只接受集成 **OAuth2.0** 的平台
 2. 建议安装“**阿里编码规约**”插件，然后进行开发
-3. 提交PR前请格式化好自己的代码
+3. 提交 PR（pull request） 前请格式化好自己的代码
 4. 注释规范，自定义的方法一定要加上：方法说明、参数说明、返回值说明等
 
 ## 功能尝鲜
 
-JustAuth一共有两个主要分支：
+JustAuth 一共有两个主要分支：
 - 线上版分支（master）：稳定版，发布版就是这个分支的代码
 - 开发版分支（dev）：不保证稳定，新功能都会优先推送到该分支，对于想尝鲜的朋友，可以直接下载代码，然后源码编译dev分支
 
@@ -102,7 +103,7 @@ JustAuth一共有两个主要分支：
 - `pig` 宇宙最强微服务认证授权脚手架(架构师必备): [https://gitee.com/log4j/pig](https://gitee.com/log4j/pig)
 - `SpringBlade` 完整的线上解决方案（企业开发必备）: https://gitee.com/smallc/SpringBlade
 
-## 捐赠
+## 赞赏
 
 | 支付宝  | 微信  |
 | :------------: | :------------: |
