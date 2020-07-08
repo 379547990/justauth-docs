@@ -1,11 +1,11 @@
 - [关于](README.md)
 - **快速开始（必读）**:triangular_flag_on_post:
-  - [**名词解释**](explain.md)
-  - [**OAuth流程**](oauth.md)
-  - [**如何使用**](how-to-use.md)
+  - [**名词解释**](quickstart/explain.md)
+  - [**OAuth流程**](quickstart/oauth.md)
+  - [**如何使用**](quickstart/how-to-use.md)
 - [贡献者名单](contributors.md)
 - [Q&A](Q&A.md)
-- 集成第三方
+- **集成第三方**
   - [√ Gitee登录](oauth/gitee.md)
   - [√ Github登录](oauth/github.md)
   - [√ qq登录](oauth/qq.md)
@@ -26,12 +26,12 @@
   - [√ Stackoverflow登录](oauth/stackoverflow.md)
   - [√ 华为登录](oauth/huawei.md)
   - [√ CSDN登录](oauth/csdn.md)
-- 高级特性
-  - [使用State](using-state.md)
-  - [自定义state缓存](customize-the-state-cache.md)
-  - [自定义第三方平台的OAuth](customize-the-oauth.md)
-- 扩展内容
-  - [JustAuth与现有用户系统整合](extended/justauth_integrated_with_the_existing_account_system.md)
+- **高级特性**
+  - [使用State](features/using-state.md)
+  - [自定义state缓存](features/customize-the-state-cache.md)
+  - [自定义第三方平台的OAuth](features/customize-the-oauth.md)
+- **扩展内容**
+  - [JustAuth与现有用户系统整合](ext/justauth_integrated_with_the_existing_account_system.md)
 - [Who is using](users.md)
 - [致谢](thx.md)
 - [参考文档](references.md)
