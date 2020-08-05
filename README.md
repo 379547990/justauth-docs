@@ -9,7 +9,7 @@
 </p>
 <p align="center">
 	<a target="_blank" href="https://search.maven.org/search?q=JustAuth">
-		<img src="https://img.shields.io/badge/Maven%20Central--1.15.6-blue" ></img>
+		<img src="https://img.shields.io/badge/Maven%20Central-1.15.7%20beta.1-blue" ></img>
 	</a>
 	<a target="_blank" href="https://gitee.com/yadong.zhang/JustAuth/blob/master/LICENSE">
 		<img src="https://img.shields.io/apm/l/vim-mode.svg?color=yellow" ></img>
@@ -18,7 +18,7 @@
 		<img src="https://img.shields.io/badge/JDK-1.8+-green.svg" ></img>
 	</a>
 	<a target="_blank" href="https://apidoc.gitee.com/yadong.zhang/JustAuth/" title="API文档">
-		<img src="https://img.shields.io/badge/Api%20Docs-1.15.6-orange" ></img>
+		<img src="https://img.shields.io/badge/Api%20Docs-1.15.7%20beta.1-orange" ></img>
 	</a>
 	<a target="_blank" href="https://justauth.wiki" title="参考文档">
 		<img src="https://img.shields.io/badge/Docs-latest-blueviolet.svg" ></img>
@@ -37,7 +37,7 @@
 	<strong>开源地址：</strong> <a target="_blank" href='https://gitee.com/yadong.zhang/JustAuth'>Gitee</a> | <a target="_blank" href='https://github.com/zhangyd-c/JustAuth'>Github</a>
 </p>
 <p align="center">
-	<strong>官方网站：</strong> <a target="_blank" href='https://justauth.cn'>https://justauth.cn</a>
+	<strong>官方网站：</strong> <a target="_blank" href='https://www.justauth.cn'>https://justauth.cn</a>
 </p>
 <p align="center">
     <strong>QQ群：</strong>230017570

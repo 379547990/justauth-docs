@@ -184,3 +184,19 @@ authRequest = new AuthLinkedinRequest(AuthConfig.builder()
 此授权只开放给**开发者**。
 另外还可通过断点的形式查找问题如：    
 ![](_media/qa/a1bfd3f0.png)    
+
+## 15. 新浪微博登录报错 403 或者 400
+
+查看控制台是否返回了类似如下异常：
+```json
+{"error":"applications over the unaudited use restrictions!","error_code":21321,"request":"/2/users/show.json"}
+```
+
+`21321`异常新浪微博官方解释为“未审核的应用使用人数超过限制” （参考[Error code](https://open.weibo.com/wiki/Error_code  )）。
+
+之所以抛出这个异常，是因为在审核期，新浪**只允许当前申请AppKey的用户进行测试**，其他用户测试的话都会被禁止并返回上面的错误。就是说如果申请应用的微博账号和测试oauth登录的微博账号不是同一个，就会抛出`21321`异常。
+
+如果想要用其他的账号进行测试，可以在新浪应用管理界面：**应用信息->测试信息** 里面添加想要测试的账户就行了，最多可以添加15人。
+
+![](_media/cb301db0.png)
+

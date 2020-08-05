@@ -1,6 +1,6 @@
 
 ![](_media/justauth@0,25x.png)
-# JustAuth <small>1.15.6</small>
+# JustAuth <small>1.15.7-beta.1</small>
 
 <strong>史上最全的整合第三方登录的开源库</strong>
 
@@ -14,6 +14,6 @@
 
 [Gitee](https://gitee.com/yadong.zhang/JustAuth)
 [Github](https://github.com/zhangyd-c/JustAuth)
-[JA 官网](https://justauth.cn)
+[JA 官网](https://www.justauth.cn)
 [Get Started:fire:](#简介)
 

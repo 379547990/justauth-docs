@@ -18,8 +18,8 @@
 
 ## 创建应用
 
-![gitlab私服创建应用](./_media/custom/gitlab.png)
-![gitlab私服应用详情](./_media/custom/gitlab2.png)
+![gitlab私服创建应用](../_media/custom/gitlab.png)
+![gitlab私服应用详情](../_media/custom/gitlab2.png)
 
 ## 实现AuthSource接口
 

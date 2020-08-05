@@ -47,7 +47,7 @@ authRequest.login(callback);
   <dependency>
       <groupId>cn.hutool</groupId>
       <artifactId>hutool-http</artifactId>
-      <version>5.2.5</version>
+      <version>5.3.9</version>
   </dependency>
   ```
 
@@ -67,7 +67,7 @@ authRequest.login(callback);
   <dependency>
     <groupId>com.squareup.okhttp3</groupId>
     <artifactId>okhttp</artifactId>
-    <version>4.4.1</version>
+    <version>4.8.0</version>
   </dependency>
   ```
 

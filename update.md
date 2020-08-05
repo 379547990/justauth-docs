@@ -1,3 +1,13 @@
+## 1.15.7-beta.1
+
+### 2020/08/05
+
+- 新增
+    - 以下平台支持自定义 Scope 参数：百度、coding、Facebook、gitee、github、gitlab、google、华为、京东·宙斯、酷家乐、领英、微软、小米、Pinterest、QQ、人人网、StackOverflow、微博、微信公众平台
+    - 添加 PR 和 ISSUE 规范和 CODE_OF_CONDUCT 文档
+- 合并
+    - 合并 Gitee [PR#19](https://gitee.com/yadong.zhang/JustAuth/pulls/19)，修复通过google登录一次后，重新用google登录无法切换谷歌账户的问题。
+
 ## 1.15.6
 
 ### 2020/06/30
