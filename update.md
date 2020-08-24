@@ -1,3 +1,10 @@
+## 1.15.7-beta.3
+
+### 2020/08/24
+
+- Fixing a bug for wechat.
+- Improve the Microsoft platform's questions about scope.
+
 ## 1.15.7-beta.1
 
 ### 2020/08/05
