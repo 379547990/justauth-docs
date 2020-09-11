@@ -200,3 +200,9 @@ authRequest = new AuthLinkedinRequest(AuthConfig.builder()
 
 ![](_media/cb301db0.png)
 
+## 16. Connection Reset 或 Connection timeout
+
+在使用 Github 或者其他国外平台的 OAuth 时，经常碰到 `Connection Reset` 或 `Connection timeout` 异常，这是因为 Q 的原因，
+
+遇到此情况，请在 AuthConfig 中配置 HttpConfig， 详情参考：[快速开始-如何使用-使用国外平台](/quickstart/how-to-use?id=%e4%bd%bf%e7%94%a8%e5%9b%bd%e5%a4%96%e5%b9%b3%e5%8f%b0)
+

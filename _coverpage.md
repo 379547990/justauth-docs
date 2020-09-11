@@ -1,8 +1,8 @@
 
 ![](_media/justauth@0,25x.png)
-# JustAuth <small>1.15.7-beta.3</small>
+# JustAuth <small>1.15.7</small>
 
-<strong>史上最全的整合第三方登录的开源库</strong>
+<strong>开箱即用的整合第三方登录的开源组件</strong>
 
 <strong>Login, so easy.</strong>
 

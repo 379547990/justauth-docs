@@ -71,6 +71,32 @@ authRequest.login(callback);
   </dependency>
   ```
 
+## 使用国外平台
+
+由于 Q 的限制，在使用国外平台时，需要额外配置 `httpConfig`，如下：
+
+```java
+AuthRequest authRequest = new AuthGoogleRequest(AuthConfig.builder()
+                .clientId("Client ID")
+                .clientSecret("Client Secret")
+                .redirectUri("应用回调地址")
+                // 针对国外平台配置代理
+                .httpConfig(HttpConfig.builder()
+                        // Http 请求超时时间
+                        .timeout(15000)
+                        // host 和 port 请修改为开发环境的参数
+                        .proxy(new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 10080)))
+                        .build())
+                .build());
+```
+
+友情提示，经测试，需要单独配置 `httpConfig` 的平台有：
+
+- Github
+- Google
+- Facebook
+- Pinterest
+- Twitter
 
 ## API分解
 

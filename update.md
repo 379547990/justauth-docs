@@ -1,3 +1,11 @@
+## 1.15.7
+
+### 2020/09/11
+
+- Release version 1.15.7
+- Upgrade the use of access token when obtaining resources on the github platform.Reference from [Deprecating API authentication through query parameters](https://developer.github.com/changes/2020-02-10-deprecating-auth-through-query-param/)
+- Fixed issue. [#89](https://github.com/justauth/JustAuth/issues/89)
+
 ## 1.15.7-beta.3
 
 ### 2020/08/24
