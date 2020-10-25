@@ -95,7 +95,7 @@ c. 回到应用详情页面，点击【接口加签方式】后面的【设置�
 </dependency>
 ```
 
-```
+```xml
 <dependency>
 	<groupId>com.alipay.sdk</groupId>
 	<artifactId>alipay-sdk-java</artifactId>

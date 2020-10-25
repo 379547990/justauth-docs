@@ -90,6 +90,8 @@ AuthRequest authRequest = new AuthGoogleRequest(AuthConfig.builder()
                 .build());
 ```
 
+本地如果支持科学上网，就用自己本地的代理端口即可，如果不支持科学上网，可以去网上找一些免费的代理IP进行测试（请自行操作）。
+
 友情提示，经测试，需要单独配置 `httpConfig` 的平台有：
 
 - Github

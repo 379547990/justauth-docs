@@ -1,6 +1,6 @@
 
 ![](_media/justauth@0,25x.png)
-# JustAuth <small>1.15.7</small>
+# JustAuth <small>1.15.8</small>
 
 <strong>开箱即用的整合第三方登录的开源组件</strong>
 
