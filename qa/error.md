@@ -87,3 +87,29 @@ authRequest = new AuthLinkedinRequest(AuthConfig.builder()
 
 遇到此情况，请在 AuthConfig 中配置 HttpConfig， 详情参考：[快速开始-如何使用-使用国外平台](/quickstart/how-to-use.md?id=%e4%bd%bf%e7%94%a8%e5%9b%bd%e5%a4%96%e5%b9%b3%e5%8f%b0)
 
+## Illegal state xx
+
+异常栈
+```
+2020-10-31 18:53:00 http-nio-9503-exec-1 me.zhyd.oauth.log.Log(error:45) [ERROR] - Failed to login with oauth authorization.me.zhyd.oauth.exception.AuthException: Illegal state [WECHAT_OPEN]	
+at me.zhyd.oauth.utils.AuthChecker.checkState(AuthChecker.java:110)	
+at me.zhyd.oauth.request.AuthDefaultRequest.login(AuthDefaultRequest.java:77)
+......
+```
+
+异常原因
+
+- 单机情况
+    - state 默认有效期为3分钟（#[AuthCacheConfig.java](https://gitee.com/yadong.zhang/JustAuth/blob/master/src/main/java/me/zhyd/oauth/cache/AuthCacheConfig.java)），第三方回调会开发者服务器后，因为异常原因在3分钟内没有处理回调请求，此时会抛出该异常。
+- 集群情况
+    - 默认 state 是缓存到 map 中，当开发者的服务为集群时，不同集群间的内存缓存无法共享，抛出该异常。具体异常流程为：有 AB 两台服务器， A 服务器生成授权链接（同时生成 state 并存到 A 服务器的本机内存中），第三方登录完回调到了 B 服务器，此时 B 服务器内存中没有 state 缓存，并且无法访问到 A 服务器的内存。 系统抛出异常。
+- 其他情况
+    - 服务部署到云端，通过内网穿透到本机。在云端生成授权链接（同时生成 state 并存到云端服务器的内存中），对调请求穿透到本地，异常流程参考上面 “集群情况”
+    
+解决方案
+
+- 针对第一种情况，先排查是否存在异常情况，然后具体分析为什么会延迟3分钟（是否本地在进行 DEBUG？是否第三方授权时长时间未点击确认授权）。最后可以适当将[AuthCacheConfig.java#timeout](https://gitee.com/yadong.zhang/JustAuth/blob/master/src/main/java/me/zhyd/oauth/cache/AuthCacheConfig.java) 参数值调高。
+- 针对第二三种情况，建议使用[自定义state缓存](../features/customize-the-state-cache.md)
+- 【不建议】另外还可以使用临时解决方案：将 [AuthConfig.java#ignoreCheckState](https://gitee.com/yadong.zhang/JustAuth/blob/master/src/main/java/me/zhyd/oauth/config/AuthConfig.java) 参数设为 true。至于为何将该条标注为【不建议】，请参考下图：
+
+![](../_media/error/ec4d1b6e.png)
